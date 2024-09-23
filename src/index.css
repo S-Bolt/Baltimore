@@ -1,0 +1,302 @@
+/* Custom Styles for Baltimore Orioles Fan Site */
+
+/* CSS Variables */
+:root {
+  --amber: #ffbe0bff;
+  --orange-pantone: #fb5607ff;
+  --rose: #ff006eff;
+  --blue-violet: #8338ecff;
+  --azure: #3a86ffff;
+}
+
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000;
+}
+main, nav {
+  background-color: #000000;
+}
+
+/* Navigation Bar Customization */
+
+.navbar-brand img {
+  border-radius: 15px;
+  height: 50px;
+
+}
+
+ .navbar-nav .nav-link {
+  font-weight: 100;
+  color: rgb(183, 181, 186);
+  margin: 0 30px;
+  /* text-shadow: 0 .8px 1px  #8338ecff,
+  0 -.3px rgba(203, 167, 253, 0.994); */
+  
+
+}
+
+ .navbar-nav .nav-link.active {
+  color: #ED4C09; /* Orioles orange */
+}
+
+ .navbar-nav .nav-link:hover {
+  color: #ED4C09;
+}
+
+.navbar-nav{
+ background-color: #000000;
+ box-shadow:            
+ 0 3px 5px rgb(25, 25, 27),          
+ 0 -1px rgba(192, 191, 191, 0.994),
+ inset 1px 5px 10px  #504851fb;          
+ border-radius: 5px;
+
+ 
+}
+
+.navbar-nav .nav-item:not(:last-child) {
+  border-right: 1px solid rgb(88, 88, 90); /* Black right border */
+}
+
+.navbar {
+  height: 12vh;
+}
+
+
+
+/* Hero Section Customization */
+.jumbotron {
+  background-image: url('./images/oriolesCityConn.png');
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  color: #000000;
+  text-shadow: 1px 1px 2px #000;
+ 
+}
+
+.jumbotron::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+ 
+
+  /* background-color: rgb(0, 0, 0);  */
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+  
+}
+
+.jumbotron .btn-primary {
+  background-color: #ED4C09;
+  border-color: #ED4C09;
+}
+
+.jumbotron .btn-primary:hover {
+  background-color: #fff;
+  color: #ED4C09;
+  border-color: #ED4C09;
+}
+
+/**
+Animations
+**/
+
+/* Animation for h1 */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100vw); /* Start completely off-screen to the left */
+    opacity: 0; /* Invisible */
+  }
+  50% {
+    opacity: 0.5; /* Partially visible in the middle of the animation */
+  }
+  100% {
+    transform: translateX(0); /* Move to the final center position */
+    opacity: 1; /* Fully visible */
+  }
+}
+  
+  .animated-h1 {
+      font-family: 'Anton', sans-serif;
+      font-weight: 700; /* Ensures it is bold */
+      font-size: 6rem;  /* Adjust font size for your design */
+      text-transform: uppercase; /* Uppercase for a blocky feel */
+      letter-spacing: 6px; /* Slightly increase letter spacing for blockiness */
+  
+    
+    animation: slideInFromLeft 2s ease-out forwards;
+  }
+
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100vh); /* Start completely off-screen (bottom) */
+      opacity: 0; /* Invisible at the start */
+    }
+    50% {
+      opacity: 0.5; /* Partially visible midway */
+    }
+    100% {
+      transform: translateY(0); /* End at the middle (its original position) */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  .animated-p {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    color: #fff;
+    opacity: 0; /* Start hidden */
+    animation: slideInFromBottom 2s ease-out forwards;
+    animation-delay: 2.5s; /* Delays the animation start by 2.5 seconds */
+  }
+  
+  
+  
+/* Featured Articles */
+.featured-articles {
+  background-color: #000000;
+}
+.featured-articles .card {
+  margin-bottom: 30px;
+}
+
+.featured-articles .card-title {
+  font-weight: bold;
+}
+
+.featured-articles .btn-primary {
+  background-color: #ED4C09;
+  border-color: #ED4C09;
+  
+}
+
+.featured-articles .btn-primary:hover {
+  background-color: #fff;
+  color: #ED4C09;
+  border-color: #ED4C09;
+}
+.card {
+  box-shadow: 
+    0 5px 15px 5px #ED4C09,
+    0 -5px 15px 5px #8338ecff,
+    inset 0 5px 10px rgba(0, 0, 0, 0.1);
+  ;
+}
+
+
+/* Upcoming Games Section */
+.upcoming-games {
+  background-color: #ED4C09;
+  color: #FFFFFF;
+  padding: 50px 0;
+}
+
+.upcoming-games h2 {
+  margin-bottom: 30px;
+}
+
+.upcoming-games .table {
+  color: #fff;
+}
+
+.upcoming-games .table th,
+.upcoming-games .table td {
+  border-top: none;
+}
+
+.upcoming-games .table thead th {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.upcoming-games .table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #ED4C09;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Carousel Customization */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+/* Custom Buttons */
+.btn-primary {
+  background-color: #ED4C09;
+  border: 2px solid #ED4C09;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #ED4C09;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  text-shadow: 0 0 5px rgba(237, 76, 9, 0.7);
+}
+
+
+/* Forms */
+.form-control:focus {
+  border-color: #ED4C09;
+  box-shadow: 0 0 0 0.2rem rgba(237, 76, 9, 0.25);
+}
+
+/* Links */
+a {
+  color: #ED4C09;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 100px 20px;
+  }
+
+  .jumbotron h1 {
+    font-size: 2rem;
+  }
+
+  .jumbotron p {
+    font-size: 1rem;
+  }
+}
