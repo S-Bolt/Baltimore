@@ -47,7 +47,7 @@
                 <a class="nav-link" href="pages/schedule.html">Schedule</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="pages/players.html">Players</a>
+                <a class="nav-link" href="#featured-players">Players</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="pages/forum.html">Forum</a>
@@ -69,21 +69,69 @@
 <!-- Main Content -->
 <main>
    <!-- Featured Articles -->
-<section class="container my-5 featured-articles">
-    <h2 class="text-center mb-4">Featured Articles</h2>
+   <section id="featured-players" class="container my-5 featured-articles">
+    <h2 class="text-center mb-4">Featured Players</h2>
     <div class="row">
-      <!-- Article Card -->
+      <!-- Article Card 1 -->
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="images/state flag.gif" class="card-img-top animated" alt="Article Image">
+          <img src="images/CYNKMTTJPVGX7MMQNDPCQZDYX4.jpg" class="card-img-top  img-fluid" alt="Article Image">
           <div class="card-body">
-            <h5 class="card-title">Article Title</h5>
+            <h5 class="card-title">Gunner Henderson</h5>
             <p class="card-text">Brief description of the article...</p>
-            <a href="#" class="btn btn-primary">Read More</a>
+            <a href="https://www.baseball-reference.com/players/h/hendegu01.shtml" class="btn btn-primary">Stats</a>
           </div>
         </div>
       </div>
 
+      <!-- Article Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/Burnes.jpeg" class="card-img-top img-fluid" alt="Article Image">
+          <div class="card-body">
+            <h5 class="card-title">Corbin Burnes</h5>
+            <p class="card-text">Brief description of the article...</p>
+            <a href="https://www.baseball-reference.com/players/b/burneco01.shtml" class="btn btn-primary">Stats</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Article Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/colton-cowser.jpg" class="card-img-top  img-fluid" alt="Article Image">
+          <div class="card-body">
+            <h5 class="card-title">Colton Cowser</h5>
+            <p class="card-text">Brief description of the article...</p>
+            <a href="https://www.baseball-reference.com/players/c/cowseco01.shtml" class="btn btn-primary">Stats</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!--Carousel -->
+    <section class="container my-5 ">
+      <h2 class="text-center mb-4">Oriole Park at Camden Yards</h2>
+      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <!--dynamic instert-->
+        </ol>
+        <div class="carousel-inner">
+          <!--dynamic instert-->
+        </div>
+         
+        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      
+    </section>
     <!-- Upcoming Games -->
     <section class="bg-warning text-white py-5">
         <div class="container">
@@ -120,14 +168,12 @@
 <footer>
     <p>&copy; 2024 Baltimore Orioles Fan Site</p>
 </footer>
-    <script src="scripts.js"></script>
-    <!-- jQuery, Popper.js, and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    ></script>
-    <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    ></script>
+
+<!-- jQuery, Popper.js, and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="scripts.js"></script>
 </body>
 </html>

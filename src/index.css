@@ -45,10 +45,14 @@ main, nav {
   color: #ED4C09;
 }
 
+.nav-item:hover {
+  box-shadow:  0 4px 8px #fb5607ff;
+}
+
 .navbar-nav{
  background-color: #000000;
  box-shadow:            
- 0 3px 5px rgb(25, 25, 27),          
+ 0 3px 5px rgb(21, 21, 21),          
  0 -1px rgba(192, 191, 191, 0.994),
  inset 1px 5px 10px  #504851fb;          
  border-radius: 5px;
@@ -56,9 +60,9 @@ main, nav {
  
 }
 
-.navbar-nav .nav-item:not(:last-child) {
-  border-right: 1px solid rgb(88, 88, 90); /* Black right border */
-}
+/* .navbar-nav .nav-item:not(:last-child) {
+  border-right: 1px solid rgb(88, 88, 90);  Black right border 
+} */
 
 .navbar {
   height: 12vh;
@@ -194,6 +198,11 @@ Animations
     0 -5px 15px 5px #8338ecff,
     inset 0 5px 10px rgba(0, 0, 0, 0.1);
   ;
+}
+
+.card img, .card-img-top {
+  height: 300px; 
+  object-fit: cover; 
 }
 
 
